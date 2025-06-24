@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Igbo Academy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: white;
+      color: #333;
+    }
+    header {
+      background-color: orange;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #fff5e6;
+      padding: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      color: orange;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .cultural-bg {
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6e/Isiagu_fabric_pattern.png');
+      background-size: cover;
+      background-position: center;
+      padding: 60px 20px;
+      color: white;
+      text-align: center;
+    }
+    .button {
+      background-color: orange;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .button:hover {
+      background-color: darkorange;
+    }
+    form {
+      background-color: #fff5e6;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      max-width: 500px;
+      margin: auto;
+    }
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Igbo Academy</h1>
+    <p>Preserving Language. Building Identity. Empowering the Future.</p>
+  </header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#classes">Classes</a>
+    <a href="#register">Register</a>
+  </nav>
+
+  <section id="home" class="cultural-bg">
+    <h2>Welcome to Igbo Academy</h2>
+    <p>Join us in teaching the next generation to speak, understand, and love the Igbo language and culture.</p>
+    <a href="#register"><button class="button">Register Now</button></a>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Igbo Academy is dedicated to revitalizing and promoting the Igbo language and heritage among children and young adults. Through engaging lessons, cultural immersion, and community events, we aim to reconnect our people with their roots.</p>
+  </section>
+
+  <section id="classes">
+    <h2>Our Classes</h2>
+    <p>We offer beginner to advanced Igbo language classes tailored to different age groups. Our sessions are interactive and fun, incorporating stories, songs, and cultural expressions to aid learning.</p>
+    <ul>
+      <li>Children (5–10 years)</li>
+      <li>Teens (11–17 years)</li>
+      <li>Adults (18+)</li>
+    </ul>
+  </section>
+
+  <section id="register">
+    <h2>Register</h2>
+    <p>Join the Igbo Academy community today! Fill out the form below and we'll contact you with further details.</p>
+    <form action="mailto:igboacademy@example.com" method="post" enctype="text/plain">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="age-group">Select Age Group</label>
+      <select id="age-group" name="age-group" required>
+        <option value="">-- Please choose an option --</option>
+        <option value="children">Children (5–10 years)</option>
+        <option value="teens">Teens (11–17 years)</option>
+        <option value="adults">Adults (18+)</option>
+      </select>
+
+      <label for="message">Message (optional)</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <button type="submit" class="button">Submit Registration</button>
+    </form>
+  </section>
+</body>
+</html>
